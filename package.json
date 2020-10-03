@@ -1,0 +1,56 @@
+{
+  "name": "bixby-template",
+  "version": "0.0.0",
+  "description": "Template engine components for Bixby.js.",
+  "keywords": [
+    "components",
+    "express",
+    "view"
+  ],
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://www.jaredhanson.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bixbyjs/bixby-template.git"
+  },
+  "bugs": {
+    "url": "http://github.com/bixbyjs/bixby-template/issues"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./app",
+  "assembly": {
+    "namespace": "template",
+    "components": [
+      "ejs"
+    ]
+  },
+  "directories": {
+    "com": "com"
+  },
+  "dependencies": {
+    "ejs": "^3.1.5"
+  },
+  "devDependencies": {
+    "make-node": "0.3.x",
+    "proxyquire": "^2.1.3",
+    "mocha": "^6.2.1",
+    "chai": "^4.2.0",
+    "sinon": "^7.5.0",
+    "sinon-chai": "^3.3.0"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
+  }
+}
