@@ -1,6 +1,6 @@
 {
   "name": "bixby-template",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Template engine components for Bixby.js.",
   "keywords": [
     "express",
